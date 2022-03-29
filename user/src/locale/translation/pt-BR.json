@@ -1,0 +1,488 @@
+{
+  "general": {
+    "next": "Próximo",
+    "finish": "Finalizar",
+    "send": "Enviar",
+    "registerSuccess": "Cadastro realizado com sucesso!",
+    "editingSuccess": "Perfil atualizado com sucesso!",
+    "recoverPasswordSuccess": "E-mail enviado com sucesso",
+    "no": "Não",
+    "cancel": "Cancelar",
+    "confim": "Confirmar",
+    "save": "Salvar alterações",
+    "selectCategory": "Selecione uma categoria"
+  },
+  "error": {
+    "requiredfield": "Campo obrigatório",
+    "email": "E-mail inválido",
+    "unknow": "Algo deu errado. Verifique os campos do formulário.",
+    "missingCategory": "Faltam informações sobre a carga",
+    "mandatorySelection": "Seleção obrigatória"
+  },
+  "login": {
+    "labelEmail": "Insira seu e-mail",
+    "labelPassword": "Senha",
+    "forgotPassword": "Esqueceu a senha?",
+    "loginNow": "Entrar agora",
+    "notRegister": "Você não tem uma conta?",
+    "register": "Cadastre-se"
+  },
+  "drawerProfile": {
+    "editPerfil": "EDITAR PERFIL"
+  },
+  "drawer": {
+    "logout": "Sair",
+    "dashboard": "Painel",
+    "freightRequest": "Solicitação de frete",
+    "followup": "Agendamentos"
+  },
+  "mainHeader": {
+    "hi": "Olá, ",
+    "welcomeBack": "Bem vindo de volta!"
+  },
+  "modal": {
+    "openGallery": "Abrir Galeria",
+    "openCamera": "Abrir Câmera",
+    "close": "Fechar"
+  },
+  "newRegister": {
+    "title": "Novo Cadastro",
+    "description": "Oba! Ficamos felizes que você deseja se cadastrar na nossa plataforma de fretes.",
+    "labelEmail": "Qual é o seu e-mail",
+    "labelPhone": "Telefone com DDD",
+    "labelPassword": "Insira uma senha de acesso",
+    "labelConfirmPassword": "Confirmar sua senha",
+    "personType": "Você é uma pessoa:",
+    "individual": "Física",
+    "business": "Jurídica"
+  },
+  "infoAccount": {
+    "title": "Informações da conta",
+    "description": "Agora precisamos que você insira as informações pessoais de sua nova conta.",
+    "name": "Qual é o seu nome?",
+    "document": "CPF",
+    "corporateName": "Razão Social",
+    "fantasyName": "Nome fantasia",
+    "businessDocument": "CNPJ",
+    "commercialTurnover": "Giro Comercial",
+    "responsible": "Responsável",
+    "position": "Cargo",
+    "findUs": "Como nos encontrou?",
+    "uploadLogo": "Carregue a sua imagem aqui",
+    "uploadLogoError": "O arquivo da imagem precisa ter menos de 2.7MB",
+    "phone": "Telefone com DDD",
+    "email": "E-mail",
+    "logo": "Foto de perfil",
+    "userName": "Nome"
+  },
+  "address": {
+    "title": "Endereço",
+    "description": "Agora precisamos que você insira as informações pessoais de sua nova conta.",
+    "cep": "CEP",
+    "street": "Rua",
+    "number": "Número",
+    "complement": "Complemento",
+    "neighborhood": "Bairro",
+    "city": "Cidade",
+    "state": "Estado",
+    "country": "País"
+  },
+  "changePassword": {
+    "current": "Senha atual",
+    "new": "Nova senha",
+    "confirm": "Confirmar nova senha",
+    "save": "Alterar a senha",
+    "success": "Sua senha foi alterada com sucesso"
+  },
+  "recoverPassword": {
+    "title": "Recuperar Senha",
+    "description": "Por favor, insira o e-mail cadastrado para que possamos enviar o link de recuperação",
+    "labelEmail": "E-mail"
+  },
+  "home": {
+    "currentBalance": "Saldo atual",
+    "freightsMade": "Fretes realizados",
+    "totalFreight": "Valor total dos fretes",
+    "averageFreight": "Valor médio dos fretes",
+    "noData": {
+      "title": "Você não tem fretes\ncadastrados",
+      "description": "Toque no botão abaixo para cadastrar\num novo frete",
+      "buttonLabel": "Cadastrar frete"
+    },
+    "isFreight": {
+      "title": "Você tem fretes em andamento",
+      "description": "Toque abaixo para acompanhar seus fretes",
+      "buttonLabel": "Acompanhar"
+    }
+  },
+  "showSelection": {
+    "week": "Semana",
+    "month": "Mês",
+    "year": "Ano"
+  },
+  "freightStatus": {
+    "title": "Frete por status"
+  },
+  "typeService": {
+    "title": "Tipo de serviço"
+  },
+  "ammountService": {
+    "title": "Quantidade de serviço"
+  },
+  "valueService": {
+    "title": "Valores dos serviços"
+  },
+  "invoices": {
+    "title": "Faturas",
+    "tableTitle": {
+      "month": "Mês/Ano",
+      "amount": "Valor",
+      "status": "Status"
+    },
+    "filter": {
+      "title": "Filtro",
+      "inputStatus": {
+        "title": "Status do frete",
+        "labels": ["Todos", "Pago", "Pendente", "Recusado"]
+      },
+      "paymentStatus": {
+        "slectOption": "Selecione uma opção",
+        "title": "Status do pagamento",
+        "labels": ["Todos", "Pago", "Pendente", "Recusado"]
+      },
+      "inputTransactionType": {
+        "title": "Tipo de transação",
+        "labels": ["Todos", "Pago", "Pendente", "Recusado"]
+      },
+      "paymentType": {
+        "title": "Método de pagamento",
+        "labels": ["Cartão de crédito", "Dinheiro", "Crédito em conta"]
+      },
+      "inputLabelStartPeriod": "Selecione um período de inicio",
+      "value": "Valor",
+      "addressProvider": "Endereço do prestador",
+      "inputLabelEndPeriod": "Selecione um período de fim",
+      "buttonLabel": "Filtrar",
+      "valueRide": "Valor da corrida"
+    }
+  },
+  "newFreight": {
+    "titleScreen": "Novo frete",
+    "title": "O processo de cadastro de carga é efetuado em 6 passos e aproximadamente 10 minutos. Os passos são:",
+    "stepsOne": "Identificação do cliente",
+    "stepsTwo": "Tipificação e descrição da carga",
+    "stepsThree": "Local e momento de coleta e entrega da carga",
+    "stepsFour": "Seleção do veículo",
+    "stepsFive": "Outros serviços",
+    "stepsSix": " Negociação do preço do frete",
+    "stepsSeven": "Recorrência do serviço",
+    "button": "Começar"
+  },
+  "requestFreight": {
+    "titleScreen": "Cadastro da carga",
+    "category": "Categoria",
+    "product": "Produto",
+    "title": "Capacidade do veículo",
+    "subTitle": "Preencha os elementos descritivos do produto",
+    "information": "(recomendamos o preenchimento o mais preciso possível de todos os campos para facilitar a seleção do veículo mais apropriadamente para o transporte da sua carga)",
+    "imageCharge": "Imagem da carga",
+    "documentCharge": "Documento da carga",
+    "button": "Informar dados do pacote"
+  },
+  "collectionPoint": {
+    "titleScreen": "Ponto de coleta",
+    "inputCollect": "Coleta",
+    "inputAddress": "Endereço",
+    "inputNumber": "Número",
+    "inputPointRef": "Ponto de referência",
+    "inputDateColletion": "Data da coleta",
+    "inputDateDelivery": "Data da entrega",
+    "inputTimeColletion": "Horário da coleta",
+    "inputTimeDelivery": "Horário da entrega",
+    "inputNameDeliveryMan": "Nome do entregador",
+    "inputPhoneDeliveryMan": "Telefone do entregador",
+    "inputNameCollectMan": "Nome do recebedor",
+    "inputPhoneCollectMan": "Telemóvel do recebedor",
+    "imageLocal": "Imagem do local de recolha",
+    "addPoint": "Adicionar ponto",
+    "button": "Próximo",
+    "collect": "Coleta",
+    "delivery": "Entrega",
+    "point": "Ponto de entrega",
+    "instruction": "Para prosseguir, é necessário adicionar ao menos um ponto de destino."
+  },
+  "packInfo": {
+    "titleScreen": "Dados do pacote",
+    "inputLabel": "Acondicionamento (caixa, envelope e etc...)",
+    "DropLength": "Comprimento (cm)",
+    "DropWidth": "Largura (cm)",
+    "DropHeight": "Altura (cm)",
+    "DropAmount": "Quantidade",
+    "DropUntary": "Peso unitário (kg)",
+    "DropTotal": "Peso total (kg)",
+    "button": "Definir ponto de coleta"
+  },
+  "point": {
+    "titleScreen": "Ponto de coleta",
+    "returnPoint": "Retorno ao ponto de partida",
+    "cardPointAddress": "Adicionar novo ponto",
+    "cardPointSubAddress": "Taxas adicionais poderão ser cobradas",
+    "addPoint": "Adicionar destino",
+    "addNext": "Próximo",
+    "origin": "Origem"
+  },
+  "history": {
+    "title": "Histórico",
+    "inputPlaceholder": "ID do frete",
+    "inProgress": "Em andamento",
+    "finished": "Finalizado",
+    "freightStatus": "Status do frete",
+    "id": "ID",
+    "provider": "Prestador de Serviço",
+    "dateHour": "Data/Horário",
+    "CollectAddress": "Endereço de coleta",
+    "DestAddress": "Endereço de entrega",
+    "paymentMethod": " Método de Pagamento",
+    "points": "Qtd. de pontos",
+    "totalDistance": "Distância Total",
+    "estimateTime": "Tempo estimado",
+    "vehicleInfo": " Informações do veículo",
+    "product": "Produto",
+    "weight": "Peso",
+    "negotiationQuantity": "Quantidade de negociações",
+    "value": "Valor",
+    "paymentStatus": "Status do Pagamento",
+    "totalValue": "Valor",
+    "proposeValue": "Valor da proposta",
+    "buttonDetail": "Detalhes do frete",
+    "addressProvider": "Endereço do prestador",
+    "statusRide": "Status da corrida",
+    "loading": "Carregando...",
+    "search": "Busca realizada com sucesso",
+    "filter": {
+      "selectOption": "Selecione uma opção"
+    }
+  },
+
+  "freightDetail": {
+    "title": "Detalhes do frete",
+    "inputPlaceholder": "ID do frete",
+    "inProgress": "Em andamento",
+    "finished": "Finalizado",
+    "freightStatus": "Status do frete",
+    "id": "ID",
+    "provider": "Prestador de Serviço",
+    "dateHour": "Data/Horário",
+    "CollectAddress": "Endereço de coleta",
+    "DestAddress": "Endereço de entrega",
+    "paymentMethod": " Método de Pagamento",
+    "points": "Qtd. de pontos",
+    "totalDistance": "Distância Total",
+    "estimateTime": "Tempo estimado",
+    "vehicleInfo": " Informações do veículo",
+    "product": "Produto",
+    "weight": "Peso",
+    "negotiationQuantity": "Quantidade de negociações",
+    "value": "Valor",
+    "paymentStatus": "Status do Pagamento",
+    "totalValue": "Valor",
+    "proposeValue": "Valor da proposta",
+    "cargoInfo": "Informações da carga",
+    "acceptProvider": "Prestadores que aceitaram a corrida",
+    "isEmptyProvider": "Prestador que aceitou a corrida"
+  },
+  "modalDetails": {
+    "title": "Informações da fatura",
+    "paymentStatus": "Status do pagamento",
+    "details": "Seus detalhes",
+    "userName": "Seu Nome",
+    "userAddress": "Seu endereço",
+    "clientDetails": "Detalhes do cliente",
+    "clientName": "Nome do cliente",
+    "clientAddress": "Endereço do cliente",
+    "invoiceID": "Fatura",
+    "invoiceData": "Data",
+    "itens": "Itens",
+    "subtotal": "Subtotal",
+    "itemDescription": "Descrição do item",
+    "total": "Total",
+    "contestButton": "Contestar",
+    "emailButton": "Enviar um e-mail"
+  },
+  "proposePrice": {
+    "title": "Valor estimado",
+    "propose": "Propor preço",
+    "proposedPrice": "Preço proposto",
+    "estimated": "Valor estimado",
+    "subTitle": "Com a CODIFICAR o cliente pode iniciar o processo negociar, propondo o preço que pretende pagar pelo serviço de transporte ou deixar que os transportadores proponham o seu preço pelo serviço solicitado",
+    "next": "Próximo"
+  },
+  "service": {
+    "title": "Outros Serviços",
+    "estimated": "Outros Serviços",
+    "subTitle": "Se precisar de algum dos serviços abaixo listado selecione ”sim” e a CODIFICAR fará o possível para lhe encontrar o melhor prestador ao melhor preço",
+    "text": " Caso tenha uma proposta de preço para a prestação de serviço que pretende contratar indique o valor. Esse valor servirá de referência para os prestadores, os quais poderão aceitar negociar ou declinar a solicitação. Isso não se aplica ao seguro de mercadoria o qual está sujeito às condições preferenciais oferecidas pelo nosso parceiro.",
+    "loading": "Carregamento",
+    "unLoading": "Descarregamento",
+    "serviceMoving": "Serviço de mudança",
+    "merchandiseInsurance": "Seguro de mercadoria",
+    "next": "Próximo"
+  },
+  "serviceRecurrence": {
+    "title": "Recorrência de serviço",
+    "heading": "Esta informação permite a CODIFICAR encontrar os transportadores que mais disponíveis estejam para atender as necessidades do cliente.",
+    "check": "Serviço recorrente?",
+    "next": "Próximo"
+  },
+  "vehicle": {
+    "title": "Seleção do veículo",
+    "duration": "Duração",
+    "distance": "Distância",
+    "estimatedValue": "Valor estimado",
+    "subTitle": "Se tiver prefência por algum veículo indique o tipo, marca, modelo etc.. (Toyota, Hilux caixa fechada)",
+    "titleVehicle": "Categoria de veiculo",
+    "subVehicle": "Subcategoria de veículo",
+    "typeVehicle": "Tipo de veiculo",
+    "next": "Próximo"
+  },
+  "payment": {
+    "title": "Pagamento",
+    "balanceAvailable": "Saldo disponível",
+    "payCash": "Pagamento em dinheiro",
+    "payCard": "Pagamento no cartão",
+    "payCredit": "Pagamento credito em conta",
+    "card": "Dados do cartão",
+    "numberCard": "Numero do cartão",
+    "nameHolder": "Nome e sobrenome do titular",
+    "dueDate": "Data de vencimento",
+    "securityCode": "Código de segurança",
+    "cardholder": "CPF do titular do cartão",
+    "next": "Próximo"
+  },
+  "freightConclude": {
+    "title": "Concluir frete",
+    "user": "Usuario",
+    "address": "Endereço",
+    "state": "Estado",
+    "email": "E-mail",
+    "contactName": "Nome do contato",
+    "telephoneCode": "Telefone com DDD",
+    "registrationDate": "Data do cadastro",
+    "infoCargo": "Informação da carga",
+    "category": "Categoria",
+    "product": "Produto",
+    "length": "Comprimento",
+    "width": "Largura",
+    "amount": "Quantidade",
+    "unitaryPrice": "Preço unitário",
+    "totalweight": "Peso total",
+    "sourceAddress": "Identificação do endereço de origem",
+    "typeAddress": "Tipo de endereço",
+    "number": "Número",
+    "referencePoint": "Ponto de referência",
+    "collectionLabel": "Recolha",
+    "deliveryLabel": "Entrega",
+    "collectionDate": "Data de recolha",
+    "collectionTime": "Horário de recolha",
+    "collectionName": "Nome do entregador",
+    "collectionPhone": "Telemóvel do entregador",
+    "deliveryDate": "Data de entrega",
+    "deliveryTime": "Hora de entrega",
+    "deliveryName": "Nome do receptor",
+    "deliveryPhone": "Telemóvel do receptor",
+    "destinationAddress": "Identificação do endereço de destino",
+    "vehicleIdentification": "Identificação do veículo",
+    "vehicleType": "Tipo de veículo",
+    "vehicleCategory": "Categoria de veículo",
+    "typeBodywork": "Tipo de carroceria",
+    "otherServices": "Outros serviços",
+    "cardPayment": "Pagamento com cartão",
+    "serviceRecurrence": "Recorrência de serviço",
+    "next": "Próximo"
+  },
+  "chooseDriver": {
+    "name": "Nome",
+    "classification": "Classificação",
+    "distance": "Distância",
+    "decline": "Recusar",
+    "accept": "Aceitar",
+    "yes": "Sim",
+    "no": "Não",
+    "acceptModal": "Tem certeza que deseja ACEITAR o frete? ",
+    "declineModal": "Tem certeza que deseja RECUSAR o frete? ",
+    "acceptProvider": "Prestador escolhido"
+  },
+  "freightEnd": {
+    "title": "Solicitação de frete concluída!",
+    "subTitle": " Parabéns! Sua solicitação foi concluída com sucesso. Agora é só aguardar até um motorista aceitar.",
+    "home": "Ir para a home",
+    "new": "Nova solicitação",
+    "calendar": {
+      "monthNames": [
+        "Janeiro",
+        "Fevereiro",
+        "Março",
+        "Abril",
+        "Maio",
+        "Junho",
+        "Julho",
+        "Agosto",
+        "Setembro",
+        "Outubro",
+        "Novembro",
+        "Dezembro"
+      ],
+      "monthNamesShort": [
+        "Jan",
+        "Fev",
+        "Mar",
+        "Abr",
+        "Mai",
+        "Jun",
+        "Jul",
+        "Agos",
+        "Set",
+        "Out",
+        "Nov",
+        "Dez"
+      ],
+      "dayNames": [
+        "Domingo",
+        "Segunda",
+        "Terça",
+        "Quarta",
+        "Quinta",
+        "Sexta",
+        "Sábado"
+      ],
+      "dayNamesShort": ["Dom", "Seg", "Terç", "Quar", "Quin", "Sext", "Sáb"],
+      "today": "Hoje"
+    }
+  },
+  "placesAutoComplete": {
+    "title": "Buscar endereço"
+  },
+  "datePicker": {
+    "titleDate": "Selecione uma data",
+    "titleTime": "Selecione uma hora"
+  },
+  "noData": {
+    "title": "Você não tem fretes\ncadastrados",
+    "description": "Toque no botão abaixo para cadastrar\num novo frete",
+    "buttonLabel": "Cadastrar frete",
+    "emptyFeight": "Nenhum frete encontrado"
+  },
+  "rating": {
+    "ratedTitle": "Sua avaliação sobre esse motorista",
+    "successAlert": "Avaliação realizada com sucesso",
+    "unratedTitle": "Avaliação do frete",
+    "unratedDescription": "Como você avalia esse motorista para essa entrega ?",
+    "inputLabel": "Comentário",
+    "buttonLabel": "Avaliar e finalizar",
+    "modalLabel1": "Você deseja realmente avaliar com ",
+    "modalLabel2": " estrela(s) esse motorista ?"
+  },
+  "tracking": {
+    "title": "Acompanhar em tempo real"
+  }
+}

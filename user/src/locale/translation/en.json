@@ -1,0 +1,480 @@
+{
+  "general": {
+    "next": "Next",
+    "finish": "Finish",
+    "send": "Send",
+    "registerSuccess": "Registration successful!",
+    "recoverPasswordSuccess": "Email successfully sent",
+    "no": "No",
+    "cancel": "Cancel",
+    "confim": "Confirm",
+    "selectCategory": "Select a category"
+  },
+  "error": {
+    "requiredfield": "Required field",
+    "email": "Invalid email",
+    "unknow": "Something went wrong. Check the form fields.",
+    "missingCategory": "There is missing info about the cargo",
+    "mandatorySelection": "Mandatory selection"
+  },
+  "login": {
+    "labelEmail": "Enter your email",
+    "labelPassword": "Password",
+    "forgotPassword": "forgot password?",
+    "loginNow": "Login now",
+    "notRegister": "Don't have an account?",
+    "register": "Register"
+  },
+  "drawerProfile": {
+    "editPerfil": "EDIT PROFILE"
+  },
+  "drawer": {
+    "logout": "Logout",
+    "dashboard": "Dashboard",
+    "freightRequest": "Freight request",
+    "followup": "Follow-up",
+    "freight_avaliable": "Freight avaliable"
+  },
+  "mainHeader": {
+    "hi": "Hi, ",
+    "welcomeBack": "Welcome back!"
+  },
+  "modal": {
+    "openGallery": "Open Gallery",
+    "openCamera": "Open Camera",
+    "close": "Close"
+  },
+  "newRegister": {
+    "title": "New Register",
+    "description": "Hey! We are happy that you wish to register on our shipping platform.",
+    "labelEmail": "What is your email",
+    "labelPhone": "Phone with area code",
+    "labelPassword": "Enter a password",
+    "labelConfirmPassword": "Confirm your password",
+    "personType": "You are a person:",
+    "individual": "Individual",
+    "business": "Business"
+  },
+  "address": {
+    "title": "Address",
+    "description": "Now we need you to enter the personal information for your new account.",
+    "cep": "CEP",
+    "street": "Street",
+    "number": "Number",
+    "complement": "Complement",
+    "neighborhood": "Neighborhood",
+    "city": "City",
+    "state": "State",
+    "country": "Country"
+  },
+  "infoAccount": {
+    "title": "Account Information",
+    "description": "Now we need you to enter the personal information for your new account.",
+    "name": "What is your name?",
+    "document": "Document",
+    "corporateName": "Corporate Name",
+    "fantasyName": "Fantasy Name",
+    "businessDocument": "Business Document",
+    "commercialTurnover": "Comercial Turnover",
+    "responsible": "Responsible",
+    "position": "Position",
+    "findUs": "How did you find us?",
+    "uploadLogo": "Upload your logo here",
+    "phone": "Phone with DDD"
+  },
+  "changePassword": {
+    "current": "Current password",
+    "new": "New password",
+    "confirm": "Confirm new Password",
+    "save": "Change Password"
+  },
+  "recoverPassword": {
+    "title": "Recover Password",
+    "description": "Please enter your registered email so we can send you the recovery link",
+    "labelEmail": "E-mail"
+  },
+  "home": {
+    "currentBalance": "current balance",
+    "freightsMade": "freights made",
+    "totalFreight": "Total value of freight",
+    "averageFreight": "Average value of freight",
+    "noData": {
+      "title": "You have no registered\nfreights",
+      "description": "Touch the button below to register\na new freight",
+      "buttonLabel": "Register New Freight"
+    },
+    "isFreight": {
+      "title": "Do you have shipping in progress",
+      "description": "Tap below to track your shipments",
+      "buttonLabel": "To accompany"
+    }
+  },
+  "showSelection": {
+    "week": "Week",
+    "month": "Month",
+    "year": "Year"
+  },
+  "freightStatus": {
+    "title": "Freight status"
+  },
+  "typeService": {
+    "title": "Type service"
+  },
+  "ammountService": {
+    "title": "Amount service"
+  },
+  "valueService": {
+    "title": "Values ​​of services"
+  },
+  "invoices": {
+    "title": "Invoice",
+    "tableTitle": {
+      "month": "Month/Year",
+      "amount": "Amount",
+      "status": "Status"
+    }
+  },
+  "filter": {
+    "title": "Filter",
+    "inputStatus": {
+      "title": "Shipping status",
+      "labels": ["All", "Paid", "Pending", "Refused"]
+    },
+    "paymentStatus": {
+      "title": "Status payment",
+      "labels": ["All", "Paid", "Pending", "Refused"]
+    },
+    "inputLabelTransactionType": {
+      "title": "Transaction Type",
+      "labels": ["All", "Paid", "Pending", "Refused"]
+    },
+    "paymentType": {
+      "title": "Payment method",
+      "labels": ["Cartão de crédito", "Dinheiro", "Crédito em conta"]
+    },
+    "inputLabelStartPeriod": "Select a start period",
+    "value": "Value",
+    "addressProvider": "Provider address",
+    "inputLabelEndPeriod": "Select an end period",
+    "buttonLabel": "Filter",
+    "valueRide": "Value ride"
+  },
+
+  "newFreight": {
+    "titleScreen": "New shipping",
+    "title": "The cargo registration process is carried out in 6 steps and approximately 10 minutes. The steps are:",
+    "stepsOne": "Customer ID",
+    "stepsTwo": "Type and description of cargo",
+    "stepsThree": "Place and time of pickup and delivery of cargo",
+    "stepsFour": "Vehicle selection",
+    "stepsFive": "Other services",
+    "stepsSix": "Shipping price negotiation",
+    "stepsSeven": "Service Recurrence",
+    "button": "Start"
+  },
+  "requestFreight": {
+    "titleScreen": "Cargo record",
+    "category": "Category",
+    "product": "Product",
+    "title": "Vehicle capacity",
+    "subTitle": "Fill in the descriptive elements of the product",
+    "information": "(we recommend filling in all the fields as accurately as possible to facilitate the selection of the most appropriate vehicle for transporting your cargo)",
+    "imageCharge": "Charge image",
+    "documentCharge": "Charge document",
+    "button": "Inform package data"
+  },
+  "collectionPoint": {
+    "titleScreen": "Collection point",
+    "inputCollect": "Collection",
+    "inputAddress": "Address",
+    "inputNumber": "Number",
+    "inputPointRef": "Reference point",
+    "inputDateColletion": "Collection date",
+    "inputDateDelivery": "Delivery date",
+    "inputTimeColletion": "Collection time",
+    "inputTimeDelivery": "Delivery time",
+    "inputNameDeliveryMan": "Delivery Name",
+    "inputPhoneDeliveryMan": "Delivery Phone",
+    "inputNameCollectMan": "Receiver Name",
+    "inputPhoneCollectMan": "Receiver Phone",
+    "imageLocal": "Image of the collection site",
+    "addPoint": "Add point",
+    "button": "Next",
+    "collect": "Collect",
+    "delivery": "Delivery",
+    "point": "Delivery point",
+    "instruction": "In order to proceed, at least one delivery point must be selected."
+  },
+  "packInfo": {
+    "titleScreen": "Package data",
+    "inputLabel": "Packaging (box, safe, envelope, bag, etc...)",
+    "DropLength": "Length (cm)",
+    "DropWidth": "Width (cm)",
+    "DropHeight": "Height (cm)",
+    "DropAmount": "Quantity",
+    "DropUntary": "Untary weight (kg)",
+    "DropTotal": "Total weight (kg)",
+    "button": "Set collection point"
+  },
+  "point": {
+    "titleScreen": "Collection point",
+    "returnPoint": "Return to starting point",
+    "cardPointAddress": "Add new point",
+    "cardPointSubAddress": "Additional fees may apply",
+    "addPoint": "Add destination",
+    "addNext": "Next",
+    "origin": "Origin"
+  },
+  "history": {
+    "title": "History",
+    "inputPlaceholder": "Freight ID",
+    "inProgress": "In Progress",
+    "finished": "Finished",
+    "freightStatus": "Freight status",
+    "id": "ID",
+    "CollectAddress": "Collection Address",
+    "DestAddress": "Delivery address",
+    "provider": "Provider",
+    "dateHour": "Date/Hour",
+    "paymentMethod": "Payment Method",
+    "points": "Points",
+    "totalDistance": "Total Distance",
+    "estimateTime": "Estimate time",
+    "vehicleInfo": "Vehicle Information",
+    "product": "Product",
+    "weight": "Weight",
+    "negotiationQuantity": "Negotiation Quantity",
+    "value": "Value",
+    "paymentStatus": "Payment Status",
+    "totalValue": "Value",
+    "proposeValue": "Proposal value",
+    "buttonDetail": "Freight detail",
+    "addressProvider": "Provider address",
+    "statusRide": "Status ride",
+    "loading": "loading...",
+    "search": "search performed successfully",
+    "filter": {
+      "selectOption": "Select an option"
+    }
+  },
+  "freightDetail": {
+    "title": "freight details",
+    "inputPlaceholder": "Freight ID",
+    "inProgress": "In Progress",
+    "finished": "Finished",
+    "freightStatus": "Freight status",
+    "id": "ID",
+    "CollectAddress": "Collection Address",
+    "DestAddress": "Delivery address",
+    "provider": "Provider",
+    "dateHour": "Date/Hour",
+    "paymentMethod": "Payment Method",
+    "points": "Points",
+    "totalDistance": "Total Distance",
+    "estimateTime": "Estimate time",
+    "vehicleInfo": "Vehicle Information",
+    "product": "Product",
+    "weight": "Weight",
+    "negotiationQuantity": "Negotiation Quantity",
+    "value": "Value",
+    "paymentStatus": "Payment Status",
+    "totalValue": "Value",
+    "proposeValue": "Proposal value",
+    "cargoInfo": "Cargo information",
+    "acceptProvider": "Providers who accepted the race",
+    "isEmptyProvider": "Provider that accepted a race"
+  },
+  "modalDetails": {
+    "title": "Invoice Information",
+    "paymentStatus": "Payment Status",
+    "details": "Your details",
+    "userName": "Your Name",
+    "userAddress": "Your adress",
+    "clientDetails": "Client Details",
+    "clientName": "Client name",
+    "clientAddress": "Customer address",
+    "invoiceID": "Invoice",
+    "invoiceData": "Date",
+    "itens": "Items",
+    "subtotal": "Subtotal",
+    "itemDescription": "Item Description",
+    "total": "Total",
+    "contestButton": "Contest",
+    "emailButton": "Send an email"
+  },
+  "proposePrice": {
+    "title": "Estimated value",
+    "propose": "Propose price",
+    "estimated": "Estimated value",
+    "subTitle": "With CODIFICAR, the customer can start the negotiation process, proposing the price he intends to pay for the transport service or let the carriers propose their price for the requested service",
+    "next": "Next"
+  },
+  "service": {
+    "title": "Other services",
+    "estimated": "Other services",
+    "subTitle": "If you need any of the services listed below, select 'yes' and CODIFICAR will do its best to find you the best provider at the best price",
+    "text": "If you have a price proposal for the service you intend to contract, please indicate the value. This value will serve as a reference for providers, who may accept to negotiate or decline the request. This does not apply to merchandise insurance which is subject to preferential conditions offered by our partner.",
+    "loading": "Loading",
+    "unLoading": "Discharging",
+    "serviceMoving": "Moving service",
+    "merchandiseInsurance": "Merchandise insurance",
+    "next": "Next"
+  },
+  "serviceRecurrence": {
+    "title": "Service Recurrence",
+    "heading": "This information allows CODIFICAR to find the carriers that are most available to meet the customer's needs.",
+    "check": "Recurring service?",
+    "next": "Next"
+  },
+  "vehicle": {
+    "title": "Estimated value",
+    "duration": "Duration",
+    "distance": "Distance",
+    "estimatedValue": "Estimated Value",
+    "subTitle": "If you have a preference for a vehicle, indicate the type, brand, model, etc... (Toyota, Hilux box)",
+    "titleVehicle": "Vehicle category",
+    "subVehicle": "Sub vehicle category",
+    "typeVehicle": "Vehicle type",
+    "next": "Next"
+  },
+  "payment": {
+    "title": "Payment",
+    "balanceAvailable": "Available balance",
+    "payCash": "Cash payment",
+    "payCard": "Payment on card",
+    "payCredit": "Account credit payment",
+    "card": "Card data",
+    "numberCard": "Card number",
+    "nameHolder": "Holder's first and last name",
+    "dueDate": "Due Date",
+    "securityCode": "Security code",
+    "cardholder": "CPF of cardholder",
+    "next": "Next"
+  },
+  "freightConclude": {
+    "title": "Complete shipping",
+    "user": "User",
+    "address": "Address",
+    "state": "state",
+    "email": "Email",
+    "contactName": "Contact Name",
+    "telephoneCode": "Phone with area code",
+    "registrationDate": "Registration date",
+    "infoCargo": "Cargo information",
+    "category": "Category",
+    "product": "Product",
+    "length": "Length",
+    "width": "Width",
+    "amount": "Amount",
+    "unitaryPrice": "Unit price",
+    "totalweight": "Total weight",
+    "sourceAddress": "Source address identification",
+    "typeAddress": "Type of address",
+    "number": "Number",
+    "referencePoint": "Reference point",
+    "collectionLabel": "Recolha",
+    "deliveryLabel": "Entrega",
+    "collectionDate": "Collection Date",
+    "collectionTime": "Collection Time",
+    "collectionName": "Collection Name",
+    "collectionPhone": "Collection Phone",
+    "deliveryDate": "Delivery Date",
+    "deliveryTime": "Delivery Time",
+    "deliveryName": "Delivery Name",
+    "deliveryPhone": "Delivery Phone",
+    "destinationAddress": "Destination address identification",
+    "vehicleIdentification": "Vehicle Identification",
+    "vehicleType": "Vehicle type",
+    "vehicleCategory": "Vehicle category",
+    "typeBodywork": "Bodywork type",
+    "otherServices": "Other services",
+    "cardPayment": "Card payment",
+    "serviceRecurrence": "Service Recurrence",
+    "next": "Next"
+  },
+  "chooseDriver": {
+    "name": "Name",
+    "classification": "Classification",
+    "distance": "Distance",
+    "decline": "Decline",
+    "accept": "Accept",
+    "yes": "Yes",
+    "no": "No",
+    "acceptModal": "Are you sure you want to ACCEPT the freight?",
+    "declineModal": "Are you sure you want to DECLINE the freight?",
+    "acceptProvider": "Chosen provider"
+  },
+  "freightEnd": {
+    "title": "Shipping request completed!",
+    "subTitle": "Congratulations! Your request was completed successfully. Now just wait until a driver accepts.",
+    "home": "Go to home",
+    "new": "New request",
+    "calendar": {
+      "monthNames": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ],
+      "monthNamesShort": [
+        "Jan.",
+        "Feb.",
+        "Mar.",
+        "Apr",
+        "May.",
+        "Jun.",
+        "Jul.",
+        "Aug.",
+        "Sep..",
+        "Oct.",
+        "Nov.",
+        "Dec."
+      ],
+      "dayNames": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "dayNamesShort": ["Sun.", "Mon.", "Tue.", "Wed.", "Thu.", "Fri.", "Sat."],
+      "today": "Today"
+    }
+  },
+  "placesAutoComplete": {
+    "title": "Search address"
+  },
+  "datePicker": {
+    "titleDate": "Select date",
+    "titleTime": "Select time"
+  },
+  "noData": {
+    "title": "You have no registered\nfreights",
+    "description": "Touch the button below to register\na new freight",
+    "buttonLabel": "Register New Freight",
+    "emptyFeight": "No found freight"
+  },
+  "rating": {
+    "ratedTitle": "Your rating about this driver",
+    "successAlert": "You have successfully rated the driver",
+    "unratedTitle": "Freight rating",
+    "unratedDescription": "How do you rate this driver in this freight ?",
+    "inputLabel": "Commnet",
+    "buttonLabel": "Rate and finish",
+    "modalLabel1": "Do you really want to rate this driver with ",
+    "modalLabel2": " stars ?"
+  },
+  "tracking": {
+    "title": "Track in real time"
+  }
+}

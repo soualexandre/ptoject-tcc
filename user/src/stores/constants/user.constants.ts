@@ -1,0 +1,30 @@
+export const defaultUserProfile: UserProfile = {
+  user: {
+    id: 0,
+    name: '',
+    email: '',
+    gender: '',
+    token: '',
+  },
+  institution: {
+    id: 0,
+    social_reason: '',
+    document: '',
+    type: '',
+    logo: '',
+    responsible: '',
+    responsible_position: '',
+    phone: '',
+  },
+  address: {
+    id: 0,
+    country: '',
+    state: '',
+    city: '',
+    zip_code: '0',
+    district: '',
+    street: '',
+    number: 0,
+    complement: '',
+  },
+};
