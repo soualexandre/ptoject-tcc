@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->group(function(){
     Route::get('/user', [App\Http\Controllers\Api\UserController::class, 'usersAll']);
     Route::post('/createCompany', [App\Http\Controllers\Api\Company\RegisterCompanyController::class, 'createCompany']);
+    Route::get('/getCompanies', [App\Http\Controllers\Api\Company\CompanyController::class, 'getListDashboardCompanies']);
+    Route::post('/createProducts', [App\Http\Controllers\Api\Product\ProductController::class, 'createProduct']);
 });
 
 Route::prefix('auth')->group(function() {

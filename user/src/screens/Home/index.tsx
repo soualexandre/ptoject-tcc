@@ -28,7 +28,6 @@ const HomeContainer: FC = () => {
       showError(message);
     }
   };
-
   const getFreightsHistory = async () => {
     try {
       await freight.getFreightsHistory();
@@ -39,10 +38,8 @@ const HomeContainer: FC = () => {
       }
     }
   };
-
   useEffect(() => {
     getTotalsDashboard();
-    getFreightsHistory();
   }, []);
 
   return (

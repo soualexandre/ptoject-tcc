@@ -63,11 +63,11 @@ const Home: FC<Props> = ({
           )}
         />
         <FreightListBase
-          data={StockData}
+          data={totalsDashboard}
           keyExtractor={(item) => item.id.toString()}
           ItemSeparatorComponent={renderSeparator}
-          renderItem={({ item: StockData }) => (
-            <CompaniesList list={StockData} />
+          renderItem={({ item: totalsDashboard }) => (
+            <CompaniesList list={totalsDashboard} />
           )}
         />
       </If>

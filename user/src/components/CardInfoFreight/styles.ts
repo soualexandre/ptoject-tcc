@@ -14,14 +14,14 @@ export const Wrapper = styled.View`
   shadow-opacity: 0.1;
   shadow-radius: ${getTheme('smallRadius')};
   elevation: 3;
-  height: 230px;
+  height: 210px;
 `;
 export const Row = styled.View`
   flex-direction: row;
   justify-content: space-between;
 `;
 export const ImageCompany = styled.Image.attrs({})`
-  height: 230px;
+  height: 210px;
   width: 130px;
   border-top-right-radius: 30px;
 `;
@@ -42,8 +42,9 @@ export const Title = styled(Typography).attrs({ variant: 'callout' })`
   font-weight: bold;
   padding-top: ${getTheme('smallSpacing')};
 `;
-
-export const Product = styled(Typography).attrs({ variant: 'subhead' })`
+export const Product = styled(FlatList as new () => FlatList).attrs({
+  contentContainerStyle: { padding: 0 },
+})`
   font-weight: bold;
   padding-top: 5px;
 `;

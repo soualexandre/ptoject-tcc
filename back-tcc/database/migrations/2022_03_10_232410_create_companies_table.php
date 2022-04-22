@@ -17,6 +17,12 @@ return new class extends Migration
             $table->id();
             $table->string('company_name')->default();
             $table->string('company_document')->default();
+            $table->string('company_city')->default();
+            $table->string('company_state')->default();
+            $table->string('company_country')->default();
+            $table->string('company_zip_code')->default();
+            $table->string('company_photo')->default();
+            $table->float('stars')->default();
             $table->string('company_latitude')->default();
             $table->string('company_longitude')->default();
             $table->integer('user_id')->default();

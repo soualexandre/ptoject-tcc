@@ -14,11 +14,11 @@ type Props = {
 const CompaniesList: FC<Props> = ({ list }) => (
   <>
     <InfoProvider
-      link={list.link}
-      title={list.title}
-      value={list.value}
-      star={list.star}
-      product={list.product}
+      link={list.company_photo}
+      title={list.company_name}
+      value={list.company_city}
+      star={list.stars}
+      product={list.products}
       productList={list.productList}
     />
   </>

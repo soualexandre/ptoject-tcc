@@ -105,9 +105,9 @@
     "totalFreight": "Valor total dos fretes",
     "averageFreight": "Valor médio dos fretes",
     "noData": {
-      "title": "Você não tem fretes\ncadastrados",
+      "title": "Você não tem agendamentos\ncadastrados",
       "description": "Toque no botão abaixo para cadastrar\num novo frete",
-      "buttonLabel": "Cadastrar frete"
+      "buttonLabel": "Agendar mercadoria"
     },
     "isFreight": {
       "title": "Você tem fretes em andamento",
@@ -467,9 +467,9 @@
     "titleTime": "Selecione uma hora"
   },
   "noData": {
-    "title": "Você não tem fretes\ncadastrados",
+    "title": "Você não tem agendamentos\ncadastrados",
     "description": "Toque no botão abaixo para cadastrar\num novo frete",
-    "buttonLabel": "Cadastrar frete",
+    "buttonLabel": "Agendar mercadoria",
     "emptyFeight": "Nenhum frete encontrado"
   },
   "rating": {

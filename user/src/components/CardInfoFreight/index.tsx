@@ -37,8 +37,15 @@ const CardInfoFreight: FC<Props> = ({
           <Title>{title}</Title>
           <Value>{value}</Value>
           <Star>{star}</Star>
-          <Product>{product}</Product>
-          <ProductList>{productList}</ProductList>
+          <Product
+            data={Product}
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            keyExtractor={(item) => item.id.toString()}
+            renderItem={({ item: Product }) => (
+              <MiniCardFilterProduct product={Product} />
+            )}
+          />
         </Column>
         <Column>
           <ImageCompany

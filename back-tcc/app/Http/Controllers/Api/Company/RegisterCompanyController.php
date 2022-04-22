@@ -23,6 +23,12 @@ class RegisterCompanyController extends Controller
             $company->company_document = $request->company_document;
             $company->company_latitude = $request->company_latitude;
             $company->company_longitude = $request->company_longitude;
+            $company->company_city = $request->company_city;
+            $company->company_state = $request->company_state;
+            $company->company_country = $request->company_country;
+            $company->company_zip_code = $request->company_zip_code;
+            $company->stars = $request->company_stars;
+            $company->company_photo = $request->company_photo;
             $company->save();
 
             $this->response = [

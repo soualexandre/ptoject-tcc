@@ -76,16 +76,7 @@ export default (): JSX.Element => {
           drawerIcon: () => <IconDashBoard />,
         }}
       />
-      <Drawer.Screen
-        name={Routes.NEW_REQUEST_FREIGHT}
-        component={NewRequestFreight}
-        options={{
-          drawerLabel: () => (
-            <NameDrawer>{strings('drawer.freightRequest')}</NameDrawer>
-          ),
-          drawerIcon: () => <IconCar />,
-        }}
-      />
+
       <Drawer.Screen
         name={Routes.FREIGHT_HISTORY}
         component={FreightHistoryScreen}

@@ -31,6 +31,7 @@ export { default as DatePicker } from './DatePicker';
 export { default as InputMask } from './InputMask';
 export { default as NoFreight } from './NoFreight';
 export { default as EmptyHistoryFreight } from './EmptyHistoryFreight';
+// export { default as ProductsCardComponent } from './ProductsCardComponent';
 export { default as FreightRating } from './FreightRating';
 export type { FreightRatingParams } from './FreightRating';
 export { default as RatingStars } from './RatingStars';

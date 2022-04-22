@@ -38,8 +38,7 @@ export const registerBusiness = async (
 
 export const getTotalsDashboard = async (): Promise<TotalDashboard> => {
   try {
-    const { data } = await request.get('/api/v2/corp/dashboard/totals');
-
+    const { data } = await request.get('/api/getCompanies');
     return data;
   } catch (error) {
     throw new ResponseError(error as AxiosError);
