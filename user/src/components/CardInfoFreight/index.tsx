@@ -1,12 +1,21 @@
 import React, { FC } from 'react';
+import MiniCardProductsCompanies from '../MiniCardProductsCompanies';
+
 import {
   Column,
+  ColumnIconStar,
+  ColumnImage,
+  ColumnStar,
   ImageCompany,
   Link,
   Product,
   ProductList,
+  RatingStar,
   Row,
+  RowStar,
+  Separator,
   Star,
+  StarIcon,
   Title,
   Value,
   Wrapper,
@@ -16,11 +25,12 @@ type Props = {
   link: string;
   title: string;
   productList: string | any;
-  product: string;
+  product: any;
   value: string | number;
   star: string;
+  toFixed: number;
 };
-
+const renderSeparator = (): JSX.Element => <Separator />;
 const CardInfoFreight: FC<Props> = ({
   link,
   title,
@@ -29,34 +39,39 @@ const CardInfoFreight: FC<Props> = ({
   star,
   productList,
   ...props
-}) => (
-  <>
-    <Wrapper {...props}>
-      <Row>
-        <Column flex={2}>
-          <Title>{title}</Title>
-          <Value>{value}</Value>
-          <Star>{star}</Star>
-          <Product
-            data={Product}
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            keyExtractor={(item) => item.id.toString()}
-            renderItem={({ item: Product }) => (
-              <MiniCardFilterProduct product={Product} />
-            )}
-          />
-        </Column>
-        <Column>
-          <ImageCompany
-            source={{
-              uri: link,
-            }}
-          />
-        </Column>
-      </Row>
-    </Wrapper>
-  </>
-);
+}) => {
+  const avaliation = star.toFixed(1);
+  return (
+    <>
+      <Wrapper {...props}>
+        <Row>
+          <ColumnImage flex={1}>
+            <ImageCompany
+              source={{
+                uri: link,
+              }}
+            />
+          </ColumnImage>
+          <Column flex={4}>
+            <Title>{title}</Title>
+            <Value>{value}</Value>
+
+            <MiniCardProductsCompanies product={product} />
+          </Column>
+          <ColumnStar>
+            <Row>
+              <Column>
+                <Star>{avaliation}</Star>
+              </Column>
+              <ColumnIconStar>
+                <StarIcon width={18} height={18} />
+              </ColumnIconStar>
+            </Row>
+          </ColumnStar>
+        </Row>
+      </Wrapper>
+    </>
+  );
+};
 
 export default CardInfoFreight;

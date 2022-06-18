@@ -1,8 +1,6 @@
-import React, { FC, useState } from 'react';
-import { RefreshControl } from 'react-native';
-import { AnyObject } from 'yup/lib/types';
-import { CardHistoryFreight, EmptyHistoryFreight } from '~/components';
-import { strings } from '~/locale';
+import React, { FC } from 'react';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import { NavigationActions, Routes } from '~/navigation';
 import { InfoProvider } from './styles';
 
 type Props = {
@@ -11,17 +9,27 @@ type Props = {
 
 // const renderSeparator = (): JSX.Element => <Separator />;
 
-const CompaniesList: FC<Props> = ({ list }) => (
-  <>
-    <InfoProvider
-      link={list.company_photo}
-      title={list.company_name}
-      value={list.company_city}
-      star={list.stars}
-      product={list.products}
-      productList={list.productList}
-    />
-  </>
-);
+const CompaniesList: FC<Props> = ({ list }) => {
+  const onPressDetails = () => {
+    NavigationActions.navigate(Routes.COMPANY_DETAIL, {
+      id: list.id,
+      company: list,
+    });
+  };
+  return (
+    <>
+      <TouchableOpacity onPress={onPressDetails}>
+        <InfoProvider
+          link={list.company_photo}
+          title={list.company_name}
+          value={list.company_city}
+          star={list.stars}
+          product={list.products}
+          productList={list.productList}
+        />
+      </TouchableOpacity>
+    </>
+  );
+};
 
 export default CompaniesList;

@@ -37,4 +37,5 @@ export type { FreightRatingParams } from './FreightRating';
 export { default as RatingStars } from './RatingStars';
 export { default as RoundedCheckBox } from './RoundedCheckBox';
 export { default as MiniCardFilterProduct } from './MiniCardFilterProduct';
+export { default as MiniCardProductsCompanies } from './MiniCardProductsCompanies';
 export { default as PlacesAutoComplete } from './PlacesAutoComplete';

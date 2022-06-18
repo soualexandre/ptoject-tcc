@@ -9,7 +9,7 @@ class DashboardRepository
 {
     public static function getCompanies($user_id)
     {
-        return Company::with('products')->get();
+        return Company::with('products')->orderBy('stars', 'DESC')->get();
     }
 
 }

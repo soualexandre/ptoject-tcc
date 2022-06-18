@@ -22,6 +22,7 @@ export enum Routes {
   INVOICE_DETAILS = 'Detalhes_da_fatura',
   FREIGHT_HISTORY = 'Historico_de_Fretes',
   FREIGHT_DETAIL = 'Detalhe_do_frete',
+  COMPANY_DETAIL = 'Detalhe_da_compania',
   ESTIMAT_VEHICLE = 'Estimativa_Veiculo',
   ESTIMAT_SERVICE = 'Estimativa_Servico',
   ESTIMAT_PROPOSE_PRICE = 'Estimativa_Propor_Preco',

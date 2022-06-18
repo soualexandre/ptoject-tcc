@@ -9,7 +9,7 @@ type Props = {
 };
 
 const IconMenu: FC<Props> = ({
-  color = '#ffffff',
+  color = '#44564D',
   width = moderateScale(18),
   height = moderateScale(12),
 }) => (

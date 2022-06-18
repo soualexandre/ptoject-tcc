@@ -19,10 +19,10 @@ export const Wrapper = styled.View<SearchProps>`
 `;
 
 export const ChildrenWrapper = styled.View`
-  background-color: ${getTheme('primary.main')};
+  background-color: ${getTheme('primary.contrast')};
   padding-horizontal: ${screenSpacing};
   padding-top: ${getTheme('statusBarSpacing')};
-  padding-bottom: 26px;
+  padding-bottom: 5px;
 `;
 
 export const Title = styled(Typography).attrs({ variant: 'headline' })`

@@ -17,10 +17,9 @@ class CompanyController extends Controller
         $this->response = [];
         $this->message = [];
         $this->statusCode = Response::HTTP_OK;
-        $companies = DashboardRepository::getCompanies($request->user_id);
         try{
+            $companies = DashboardRepository::getCompanies($request->user_id);
             $this->response = $companies;
-
             return response()->json($this->response , 200);
         } catch(\Throwable $e){
             Log::error('LoginController, login() ' . $e->getMessage());

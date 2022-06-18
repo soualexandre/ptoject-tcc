@@ -2,7 +2,7 @@
  * Project colors schema
  */
 export const projectColors = {
-  primary: '#2F855A',
+  primary: '#669B7D',
   secondary: '#000000',
   tertiary: '#f6f6f6',
   text: '#3F4444',

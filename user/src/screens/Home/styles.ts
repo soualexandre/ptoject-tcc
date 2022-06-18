@@ -79,7 +79,17 @@ export const NoDataWrapper = styled.View`
 export const Center = styled.View`
   margin: auto;
 `;
-
+export const TitleSection = styled(Typography).attrs({
+  variant: 'subhead',
+})`
+  margin-top: ${getTheme('smallSpacing')};
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 20px;
+  color: ${getTheme('gray')};
+`;
 export const NoDataTitle = styled(Typography).attrs({
   variant: 'title2',
 })`

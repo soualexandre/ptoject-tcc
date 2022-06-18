@@ -6,6 +6,7 @@ import {
 import {
   CargoRegister,
   CollectPoint,
+  CompanyDetailScreen,
   EditProfileAddressScreen,
   EditProfileInfoScreen,
   EditProfilePasswordScreen,
@@ -108,6 +109,10 @@ export const PrivateStack = (): JSX.Element => (
     <Private.Screen
       name={Routes.FREIGHT_DETAIL}
       component={FreightDetailScreen}
+    />
+    <Private.Screen
+      name={Routes.COMPANY_DETAIL}
+      component={CompanyDetailScreen}
     />
     <Private.Screen name={Routes.EDIT_PROFILE} component={EditProfileScreen} />
     <Private.Screen

@@ -13,6 +13,7 @@ export { default as CollectPoint } from './RequestFreight/CollectionPoint';
 export { default as Point } from './RequestFreight/Point';
 export { default as FreightHistoryScreen } from './FreightHistory';
 export { default as FreightDetailScreen } from './FreightDetail';
+export { default as CompanyDetailScreen } from './CompanyDetail';
 export { default as InvoiceDetail } from './InvoiceDetail';
 export { default as EstimateVehicle } from './RequestFreight/Estimate/Vehicle';
 export { default as EstimateService } from './RequestFreight/Estimate/Service';

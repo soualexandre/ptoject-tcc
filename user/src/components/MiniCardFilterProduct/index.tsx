@@ -3,7 +3,7 @@ import { Text } from 'react-native';
 import { FilterHorizontal, Image, Row, Wrapper } from './styles';
 
 type Props = {
-  product: string;
+  product: any;
 };
 const MiniCardFilterProduct: React.FC<Props> = ({ product, ...props }) => (
   <Wrapper {...props}>

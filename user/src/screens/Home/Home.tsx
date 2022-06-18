@@ -15,6 +15,7 @@ import {
   ListBaseFilterProduct,
   Loading,
   Separator,
+  TitleSection,
   Wrapper,
 } from './styles';
 
@@ -29,53 +30,41 @@ type Props = {
 };
 const renderSeparator = (): JSX.Element => <Separator />;
 
-const Home: FC<Props> = ({
-  userName,
-  totalsDashboard,
-  hasTotalsDashboard,
-  hasData,
-  handleNavigate,
-  hasConcludedFreight,
-  loaded,
-}) => (
-  <Wrapper
-    isMainHeader
-    fullWidth
-    isFixed
-    showSearchInput
-    showAvatar
-    bounces={false}
-    title={`Olá ${userName}`}
-  >
-    <ScrollView>
-      <If condition={loaded}>
-        <If condition={!hasTotalsDashboard}>
+const Home: FC<Props> = ({ totalsDashboard, hasTotalsDashboard, loaded }) => {
+  console.log('totalsDashboard', totalsDashboard);
+  return (
+    <Wrapper isMainHeader fullWidth showSearchInput isFixed showAvatar>
+      <ScrollView>
+        <If condition={loaded}>
+          <If condition={!hasTotalsDashboard}>
+            <Loading size="large" />
+          </If>
+          <ListBaseFilterProduct
+            data={Product}
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            keyExtractor={(item) => item.id.toString()}
+            ItemSeparatorComponent={renderSeparator}
+            renderItem={({ item: Product }) => (
+              <MiniCardFilterProduct product={Product} />
+            )}
+          />
+          <TitleSection> Produtores</TitleSection>
+          <FreightListBase
+            data={totalsDashboard}
+            keyExtractor={(item) => item.id.toString()}
+            ItemSeparatorComponent={renderSeparator}
+            renderItem={({ item: totalsDashboard }) => (
+              <CompaniesList list={totalsDashboard} />
+            )}
+          />
+        </If>
+        <If condition={!loaded}>
           <Loading size="large" />
         </If>
-        <ListBaseFilterProduct
-          data={Product}
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          keyExtractor={(item) => item.id.toString()}
-          ItemSeparatorComponent={renderSeparator}
-          renderItem={({ item: Product }) => (
-            <MiniCardFilterProduct product={Product} />
-          )}
-        />
-        <FreightListBase
-          data={totalsDashboard}
-          keyExtractor={(item) => item.id.toString()}
-          ItemSeparatorComponent={renderSeparator}
-          renderItem={({ item: totalsDashboard }) => (
-            <CompaniesList list={totalsDashboard} />
-          )}
-        />
-      </If>
-      <If condition={!loaded}>
-        <Loading size="large" />
-      </If>
-    </ScrollView>
-  </Wrapper>
-);
+      </ScrollView>
+    </Wrapper>
+  );
+};
 
 export default observer(Home);
