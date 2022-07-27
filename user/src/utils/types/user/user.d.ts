@@ -97,22 +97,10 @@ declare type UserProfileInfo = {
 
 // type para cadastro pessoa física
 declare type UserAuth = {
-  email: string;
-  phone: string;
+  name: string;
+  username: string;
   password: string;
   confirmPassword?: string;
-  name: string;
-  document: string;
-  find_us: string;
-  logo: string;
-  cep: string;
-  number: string;
-  complement: string;
-  disctrict: string;
-  city: string;
-  street: string;
-  state: string;
-  country: string;
 };
 // type para cadastro empresa
 declare type UserAuthBusiness = {
@@ -121,7 +109,7 @@ declare type UserAuthBusiness = {
   business_document: string;
   responsible: string;
   position: string;
-  email: string;
+  username: string;
   phone: string;
   password: string;
   confirmPassword?: string;

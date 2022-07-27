@@ -19,8 +19,9 @@ export const recoverPassword = async (email: string): Promise<void> => {
 };
 
 export const registerIndividual = async (userAuth: FormData): Promise<void> => {
+  console.log('SUPER TESTE -----------', userAuth);
   try {
-    await request.post('/api/v2/corp/signup/individual', userAuth);
+    await request.post('/api/auth/register', userAuth);
   } catch (error) {
     throw new ResponseError(error as AxiosError);
   }

@@ -48,7 +48,7 @@
     "title": "New Register",
     "description": "Hey! We are happy that you wish to register on our shipping platform.",
     "labelEmail": "What is your email",
-    "labelPhone": "Phone with area code",
+    "name": "Name",
     "labelPassword": "Enter a password",
     "labelConfirmPassword": "Confirm your password",
     "personType": "You are a person:",

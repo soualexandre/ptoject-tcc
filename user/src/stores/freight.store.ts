@@ -1,4 +1,4 @@
-import { action, computed, observable, runInAction } from 'mobx';
+import { ObservableMap, action, computed, observable, runInAction } from 'mobx';
 import { FreightApi } from '~/api';
 import { isEmpty } from '~/modules';
 import { FREIGHT_STATUS } from '~/utils';
@@ -8,8 +8,12 @@ const defaultFreights: Freight[] = [];
 const defaultFreightDetail = {} as FreightDetails;
 
 const defaultChooseDrivers: ChooseDrivers[] = [];
+const defaultSlectedProduct = {} as selectedProduct;
 
 export default class FreightStore {
+  @observable
+  selectedProducts: selectedProduct = defaultSlectedProduct;
+
   @observable
   freights: Freight[] = defaultFreights;
 

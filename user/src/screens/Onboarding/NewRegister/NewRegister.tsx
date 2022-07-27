@@ -3,10 +3,10 @@ import { isEmpty } from 'lodash';
 import { InputMask } from '~/components';
 import { strings } from '~/locale';
 import { FormikProps, useFormikContext } from '~/modules';
-import { getPhoneMask, useAlerts } from '~/utils';
-import { FormNewRegister, radioProps } from './formValues';
+import { useAlerts } from '~/utils';
+import { FormNewRegister } from './formValues';
 import {
-  ButtonContinue,
+  Button,
   FormWrapper,
   Input,
   PersonTypeText,
@@ -21,10 +21,11 @@ type Props = {
   togglePasswordMask: () => void;
   confirmMask: boolean;
   toggleConfirmMask: () => void;
+  isLoading: boolean;
 };
-
 const NewRegister: React.FC<Props> = ({
   userType,
+  isLoading,
   onChangeRadioButton,
   passwordMask,
   togglePasswordMask,
@@ -49,7 +50,6 @@ const NewRegister: React.FC<Props> = ({
     }
     showError(strings('error.unknow'));
   };
-
   return (
     <Wrapper
       title={strings('newRegister.title')}
@@ -59,20 +59,20 @@ const NewRegister: React.FC<Props> = ({
     >
       <FormWrapper>
         <Input
-          keyboardType="email-address"
-          label={strings('newRegister.labelEmail')}
-          value={values.email}
-          error={errors.email}
-          onChangeText={handleChange('email')}
+          label={strings('newRegister.name')}
+          value={values.name}
+          error={errors.name}
+          keyboardType="numeric"
+          onChangeText={handleChange('name')}
         />
         <Input
-          label={strings('newRegister.labelPhone')}
-          value={values.phone}
-          options={getPhoneMask()}
-          error={errors.phone}
-          keyboardType="numeric"
-          onChangeText={handleChange('phone')}
+          keyboardType="email-address"
+          label={strings('newRegister.labelEmail')}
+          value={values.username}
+          error={errors.username}
+          onChangeText={handleChange('username')}
         />
+
         <Input
           label={strings('newRegister.labelPassword')}
           value={values.password}
@@ -97,16 +97,10 @@ const NewRegister: React.FC<Props> = ({
           state={confirmMask}
           position={3}
         />
-        <PersonTypeText>{strings('newRegister.personType')}</PersonTypeText>
-        <RadioButton
-          radioProps={radioProps}
-          selectedIndex={userType}
-          onButtonPress={onChangeRadioButton}
-        />
       </FormWrapper>
-      <ButtonContinue onPress={handleSubmit}>
+      <Button onPress={handleSubmit} isLoading={isLoading}>
         {strings('general.next')}
-      </ButtonContinue>
+      </Button>
     </Wrapper>
   );
 };

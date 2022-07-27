@@ -30,6 +30,7 @@ import {
   Payment,
   Point,
   RecoverPasswordScreen,
+  ShowCartItmems,
 } from '~/screens';
 import {
   ModalsStackParams,
@@ -114,6 +115,9 @@ export const PrivateStack = (): JSX.Element => (
       name={Routes.COMPANY_DETAIL}
       component={CompanyDetailScreen}
     />
+
+    <Private.Screen name={Routes.SHOW_CART_ITEMS} component={ShowCartItmems} />
+
     <Private.Screen name={Routes.EDIT_PROFILE} component={EditProfileScreen} />
     <Private.Screen
       name={Routes.EDIT_PROFILE_INFO}

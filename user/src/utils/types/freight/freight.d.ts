@@ -76,6 +76,10 @@ declare type ChooseDrivers = {
     provider_photo: string;
   };
 };
+declare type selectedProduct = {
+  product_name: string;
+  quantity: number;
+};
 
 declare type ProviderTypeWeight = {
   id: number;

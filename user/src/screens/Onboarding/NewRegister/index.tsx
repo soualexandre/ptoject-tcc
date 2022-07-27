@@ -1,17 +1,18 @@
 import React, { FC, useEffect, useState } from 'react';
 import { observer } from 'mobx-react';
 import { FormContainer } from '~/components';
+import { strings } from '~/locale';
 import { navigate } from '~/navigation/actions';
 import { Routes } from '~/navigation/routes';
-import { USER_TYPE, getRawPhone, useStores } from '~/utils';
+import { USER_TYPE, getRawPhone, useAlerts, useStores } from '~/utils';
 import { FormNewRegister } from './formValues';
 import NewRegister from './NewRegister';
 import { validationSchema } from './validationSchema';
 
 const NewRegisterContainer: FC = () => {
   const [initialValues, setInitialValues] = useState({
-    email: '',
-    phone: '',
+    username: '',
+    name: '',
     password: '',
     confirmPassword: '',
   });
@@ -19,6 +20,8 @@ const NewRegisterContainer: FC = () => {
   const [passwordMask, setPasswordMask] = useState(true);
   const [confirmMask, setConfirmMask] = useState(true);
   const { user } = useStores();
+  const { showError, showSuccess } = useAlerts();
+  const [isLoading, setIsLoading] = useState(false);
 
   const togglePasswordMask = () => {
     setPasswordMask((oldstate) => !oldstate);
@@ -30,15 +33,15 @@ const NewRegisterContainer: FC = () => {
   const loadInitialValues = () => {
     if (userType === USER_TYPE.INDIVIDUAL) {
       setInitialValues({
-        email: user.userAuth.email || '',
-        phone: user.userAuth.phone || '',
+        name: user.userAuth.name || '',
+        username: user.userAuth.username || '',
         password: user.userAuth.password || '',
         confirmPassword: user.userAuth.confirmPassword || '',
       });
     } else {
       setInitialValues({
-        email: user.userAuthBusiness.email || '',
-        phone: user.userAuthBusiness.phone || '',
+        username: user.userAuthBusiness.username || '',
+        name: user.userAuthBusiness.name || '',
         password: user.userAuthBusiness.password || '',
         confirmPassword: user.userAuthBusiness.confirmPassword || '',
       });
@@ -49,17 +52,19 @@ const NewRegisterContainer: FC = () => {
     loadInitialValues();
   }, []);
 
-  const onSubmit = (values: FormNewRegister): void => {
-    user.setUserType(userType);
-
-    values.phone = getRawPhone(values.phone);
-
-    if (userType === USER_TYPE.INDIVIDUAL) {
-      user.setUserAuthIndividual(values);
-      navigate(Routes.ONBOARDING_INFO_PERSON);
-    } else {
-      user.setUserAuthBusiness(values);
-      navigate(Routes.ONBOARDING_INFO_ENTERPRISE);
+  const onSubmit = async (values: FormNewRegister): Promise<void> => {
+    console.log('valores ----', values);
+    await user.setUserAuthIndividual(values);
+    try {
+      setIsLoading(true);
+      await user.register();
+      user.clearUserAuth();
+      showSuccess(strings('general.registerSuccess'));
+      navigate(Routes.LOGIN);
+    } catch ({ message }) {
+      showError(message);
+    } finally {
+      setIsLoading(false);
     }
   };
   return (
@@ -71,6 +76,7 @@ const NewRegisterContainer: FC = () => {
     >
       <NewRegister
         userType={userType}
+        isLoading={isLoading}
         onChangeRadioButton={setUserType}
         passwordMask={passwordMask}
         togglePasswordMask={togglePasswordMask}

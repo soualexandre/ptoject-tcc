@@ -9,7 +9,7 @@ type Props = {
 };
 
 const IconClose: FC<Props> = ({
-  color = '#323232',
+  color = '#669B7D',
   width = moderateScale(14),
   height = moderateScale(14),
 }) => (

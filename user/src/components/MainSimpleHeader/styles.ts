@@ -4,11 +4,11 @@ import { getTheme } from '~/utils';
 import TouchableDefault from '../Touchable';
 import Typography from '../Typography';
 
-const primaryContrast = getTheme('primary.contrast');
+const primaryContrast = getTheme('primary.main');
 const smallSpacing = getTheme('smallSpacing');
 
 export const Wrapper = styled.View`
-  background-color: ${getTheme('primary.main')};
+  background-color: ${getTheme('primary.contrast')};
   padding: ${getTheme('mediumSpacing')};
 `;
 

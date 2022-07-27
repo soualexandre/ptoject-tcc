@@ -7,13 +7,7 @@ import {
   ColumnImage,
   ColumnStar,
   ImageCompany,
-  Link,
-  Product,
-  ProductList,
-  RatingStar,
   Row,
-  RowStar,
-  Separator,
   Star,
   StarIcon,
   Title,
@@ -30,7 +24,6 @@ type Props = {
   star: string;
   toFixed: number;
 };
-const renderSeparator = (): JSX.Element => <Separator />;
 const CardInfoFreight: FC<Props> = ({
   link,
   title,

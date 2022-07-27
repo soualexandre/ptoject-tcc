@@ -49,7 +49,7 @@
     "title": "Novo Cadastro",
     "description": "Oba! Ficamos felizes que você deseja se cadastrar na nossa plataforma de fretes.",
     "labelEmail": "Qual é o seu e-mail",
-    "labelPhone": "Telefone com DDD",
+    "name": "Nome",
     "labelPassword": "Insira uma senha de acesso",
     "labelConfirmPassword": "Confirmar sua senha",
     "personType": "Você é uma pessoa:",

@@ -100,17 +100,13 @@ export default class UserStore {
 
   @action
   register = async () => {
-    if (this.userType === USER_TYPE.INDIVIDUAL) {
-      await this.registerIndividual();
-    } else {
-      await this.registerBusiness();
-    }
+    await this.registerIndividual();
   };
 
   @action
   registerIndividual = async () => {
+    console.log(this.userAuth);
     const userIndividual = getUserIndividualFormData(this.userAuth);
-
     await UserApi.registerIndividual(userIndividual);
   };
 

@@ -8,6 +8,7 @@ export { default as OnboaringdInfoEnterpriseScreen } from './Onboarding/InfoEnte
 export { default as InvoiceScreen } from './Invoice';
 export { default as NewRequestFreight } from './RequestFreight/NewFreight';
 export { default as CargoRegister } from './RequestFreight/CargoRegister';
+export { default as ShowCartItmems } from './ShowCartItmems';
 export { default as PackageInfo } from './RequestFreight/PackageInfo';
 export { default as CollectPoint } from './RequestFreight/CollectionPoint';
 export { default as Point } from './RequestFreight/Point';

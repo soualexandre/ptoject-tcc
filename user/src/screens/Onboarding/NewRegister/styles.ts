@@ -1,12 +1,11 @@
 import styled from 'styled-components/native';
 import {
-  Button,
+  Button as ButtonDefault,
   RadioButtonPerson,
   ScreenWrapper,
   TextInput,
   Typography,
 } from '~/components';
-
 import { getTheme } from '~/utils';
 
 const mediumSpacing = getTheme('mediumSpacing');
@@ -34,7 +33,7 @@ export const RadioButton = styled(RadioButtonPerson)`
   padding-bottom: ${mediumSpacing};
 `;
 
-export const ButtonContinue = styled(Button)`
+export const Button = styled(ButtonDefault)`
   width: 100%;
   align-self: center;
 `;

@@ -52,7 +52,7 @@
     "title": "Novo Cadastro",
     "description": "Obrigado por se cadastrar na nossa plataforma de fretes.",
     "labelEmail": "E-mail",
-    "labelPhone": "Telemóvel",
+    "name": "Nome",
     "labelPassword": "Insira uma senha de acesso",
     "labelConfirmPassword": "Confirmar senha",
     "personType": "Você é uma pessoa:",

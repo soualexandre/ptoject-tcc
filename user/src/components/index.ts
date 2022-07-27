@@ -24,6 +24,7 @@ export { default as UploadLogo } from './UploadLogo';
 export { default as If } from './If';
 export { default as CardHistoryFreight } from './CardHistoryFreight';
 export { default as CardChooseDriver } from './CardChooseDriver';
+export { default as CartProductList } from './CartProductList';
 export { default as CheckBox } from './CheckBox';
 export { default as Calendar } from './Calendar';
 export { default as Select } from './Select';

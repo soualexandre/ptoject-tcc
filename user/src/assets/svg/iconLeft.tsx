@@ -8,8 +8,8 @@ type Props = {
   height?: number;
 };
 
-const IconClose: FC<Props> = ({
-  color = '#323232',
+const IconLeft: FC<Props> = ({
+  color = '#000',
   width = moderateScale(16),
   height = moderateScale(16),
 }) => (
@@ -21,4 +21,4 @@ const IconClose: FC<Props> = ({
   </Svg>
 );
 
-export default IconClose;
+export default IconLeft;
